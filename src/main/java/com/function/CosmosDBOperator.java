@@ -73,7 +73,6 @@ public class CosmosDBOperator {
         context.getLogger().info("---------------Creating Async Client.---------------");
         // CosmosAsyncClient cosmosAsyncClient = new CosmosClientBuilder()
         // .endpoint("https://azhoncosmosdb.documents.azure.com:443/")
-        // .key("")
         // // .preferredRegions(Collections.singletonList("Central US"))
         // // .consistencyLevel(ConsistencyLevel.EVENTUAL)
         // .buildAsyncClient();
