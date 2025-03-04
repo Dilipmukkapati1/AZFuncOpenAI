@@ -72,9 +72,9 @@ public class CosmosDBOperator {
     public CosmosAsyncClient gClient(final ExecutionContext context) {
         context.getLogger().info("---------------Creating Async Client.---------------");
 
-        String nothing = "dbbb9c57-fb1d-4320-b707-c9d83021f60c";
+        String clientId = "dbbb9c57-fb1d-4320-b707-c9d83021f60c";
         DefaultAzureCredential defaultCredential = new DefaultAzureCredentialBuilder()
-        .managedIdentityClientId("")
+        .managedIdentityClientId(clientId)
         .build();
 
         CosmosAsyncClient cosmosAsyncClient = new CosmosClientBuilder()
